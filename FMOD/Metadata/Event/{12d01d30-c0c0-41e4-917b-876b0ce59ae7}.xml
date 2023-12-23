@@ -56,7 +56,7 @@
 			<destination>{57a77c8d-fd71-47ff-ba1f-fc62ee460ba0}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{04c8c892-4b21-427f-ba4d-60cfffb4a6ee}</destination>
+			<destination>{b4c3ae30-d39f-4c70-9f8e-e74509a0ea98}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{1f37516a-4ed8-4c9d-8345-9ad6b5d23700}" />
@@ -110,9 +110,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{ebf4afd2-c3f5-42bf-af59-43d6abda7d43}">
-		<property name="volume">
-			<value>-5</value>
-		</property>
 		<property name="name">
 			<value>Woosh</value>
 		</property>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EncodableAsset" id="{004863f6-46b1-4112-8f93-21f8d2164938}">
+		<property name="assetPath">
+			<value>Commentators/OnRandomTimer/04/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{95b6e14c-c36e-489e-9374-1675535991ae}</destination>
+		</relationship>
+	</object>
+</objects>

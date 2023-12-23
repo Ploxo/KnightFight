@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{96d80ddc-ea8f-4396-ba7b-34a6099649d3}">
+		<property name="assetPath">
+			<value>Commentators/On incative3.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>12.174399092970521</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{95b6e14c-c36e-489e-9374-1675535991ae}</destination>
+		</relationship>
+	</object>
+</objects>

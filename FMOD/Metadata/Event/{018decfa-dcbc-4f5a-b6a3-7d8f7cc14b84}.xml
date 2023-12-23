@@ -83,7 +83,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{6365342e-64a8-4bbc-ad03-e764034c9b85}">
 		<property name="volume">
-			<value>-4</value>
+			<value>-3</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{11710b57-a852-46f7-8860-dfe8fb86ac2c}</destination>
@@ -104,6 +104,9 @@
 	<object class="MultiSound" id="{b46edd59-9da3-45a4-a2a7-f1a7426bc201}">
 		<property name="length">
 			<value>0.23999999999999999</value>
+		</property>
+		<property name="pitch">
+			<value>3</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{863ef2f9-784b-4313-b282-41ef236f5e10}</destination>
@@ -135,6 +138,12 @@
 		</relationship>
 	</object>
 	<object class="MultiSound" id="{474c6a82-7b2c-419e-9ca7-4c477db53dd5}">
+		<property name="triggerProbabilityEnabled">
+			<value>true</value>
+		</property>
+		<property name="triggerProbability">
+			<value>75</value>
+		</property>
 		<property name="start">
 			<value>0.080000000000000002</value>
 		</property>
@@ -278,10 +287,7 @@
 	<object class="MixerBusFader" id="{701c0791-0e44-4586-87d5-e6b2e0245bc6}" />
 	<object class="ThreeEQEffect" id="{dd01a9c4-8011-4ebf-a0e6-9d5c47034a32}">
 		<property name="lowGain">
-			<value>-4.5</value>
-		</property>
-		<property name="midGain">
-			<value>-2.5</value>
+			<value>-5</value>
 		</property>
 	</object>
 	<object class="ConvolutionReverbEffect" id="{18d2737e-63de-4cb5-bbd6-9e59e7bc6fe4}">

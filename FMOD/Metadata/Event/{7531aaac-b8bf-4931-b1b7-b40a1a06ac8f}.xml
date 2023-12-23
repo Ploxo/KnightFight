@@ -72,6 +72,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{8a182f51-0fa4-4887-975a-adef3a21a83d}">
+		<property name="volume">
+			<value>-80</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{7ea29c20-2722-4dd8-8f58-dd7299abae40}</destination>
 		</relationship>
@@ -105,9 +108,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{d31359dc-267c-4e48-94d0-bf57f72ee735}">
-		<property name="volume">
-			<value>-80</value>
-		</property>
 		<property name="name">
 			<value>Woosh</value>
 		</property>

@@ -17,10 +17,7 @@ public class PlayerDashState : PlayerIState
         player.internalDashTimer = 0f;
         player.animator.SetBool("Dash", true);
         player.audioPlayer.PlayerDashing();
-        if (player.weapon != null)
-        {
-            player.weapon.GetComponent<Collider>().enabled = true; //tillfällig implementation
-        }
+
     }
 
     public void UpdateState()
@@ -28,7 +25,7 @@ public class PlayerDashState : PlayerIState
         internalStateTimer += Time.deltaTime;
         if (player.canDash)
         {
-            if(internalStateTimer < player.dashDuration)
+            if (internalStateTimer < player.dashDuration)
             {
                 player.Dash();
             }
@@ -42,17 +39,12 @@ public class PlayerDashState : PlayerIState
             player.RunOrIdleDecider();
         }
     }
-    public void ChangeState(PlayerIState newState)
+    public void ExitState()
     {
         player.animator.SetBool("Dash", false);
         player.internalGCDTimer = 0f;
         player.internalDashTimer = 0f;
         internalStateTimer = 0f;
-        if (player.weapon != null)
-        {
-            player.weapon.GetComponent<Collider>().enabled = false; //tillfällig implementation
-        }
-        player.StateChanger(newState);
     }
 
     public void TakeDamage(float damage)

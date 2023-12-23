@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{2b738b1c-8cd4-495d-a987-e06bc158af77}">
+		<property name="assetPath">
+			<value>Commentators/OnVictory4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>7.389727891156463</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{95b6e14c-c36e-489e-9374-1675535991ae}</destination>
+		</relationship>
+	</object>
+</objects>

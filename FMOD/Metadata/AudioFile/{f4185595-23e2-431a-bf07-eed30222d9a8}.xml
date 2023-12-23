@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{f4185595-23e2-431a-bf07-eed30222d9a8}">
+		<property name="assetPath">
+			<value>Commentators/OnDeath/04/zippers.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.5929024943310659</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{95b6e14c-c36e-489e-9374-1675535991ae}</destination>
+		</relationship>
+	</object>
+</objects>

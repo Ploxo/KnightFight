@@ -56,6 +56,10 @@ public class WeaponSpearPattern : WeaponBaseClass
         //}
        
     }
+    public override void EndAttack()
+    {
+        col.enabled = false;
+    }
 
     public override void ChangeDurability(float durabilityDecrement)
     {
@@ -69,6 +73,11 @@ public class WeaponSpearPattern : WeaponBaseClass
 
     public override void OnCollisionEnter(Collision collision)
     {
-        currentState.HandleCollision(collision);
+        currentState.CollisionEnter(collision);
+    }
+
+    public override void OnCollisionStay(Collision collision)
+    {
+        currentState.CollisionStay(collision);
     }
 }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{c5ca0071-cfea-433f-bd7c-99886f0ba9b2}">
+		<property name="assetPath">
+			<value>Commentators/OnInactive/02/Forgot-2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.8843764172335602</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{95b6e14c-c36e-489e-9374-1675535991ae}</destination>
+		</relationship>
+	</object>
+</objects>

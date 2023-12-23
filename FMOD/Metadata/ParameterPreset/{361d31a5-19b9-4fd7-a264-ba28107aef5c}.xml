@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{361d31a5-19b9-4fd7-a264-ba28107aef5c}">
+		<property name="name">
+			<value>halfHealth</value>
+		</property>
+		<relationship name="folder">
+			<destination>{2cf0f05f-eecc-4767-be0c-cf1fc7e6dd60}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{4afb5d15-4bae-4794-a2b0-61a9b7c9f0e6}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{4afb5d15-4bae-4794-a2b0-61a9b7c9f0e6}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

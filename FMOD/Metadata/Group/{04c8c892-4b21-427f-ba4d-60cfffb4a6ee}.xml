@@ -7,6 +7,9 @@
 		<property name="name">
 			<value>Player SFX</value>
 		</property>
+		<relationship name="masters">
+			<destination>{d4cdbbe3-9f6b-45eb-9a8c-ad41b3ac6cc3}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{950fafa8-570f-4207-acf4-3f68a8c7489b}</destination>
 		</relationship>
@@ -20,16 +23,29 @@
 	<object class="MixerBusEffectChain" id="{950fafa8-570f-4207-acf4-3f68a8c7489b}">
 		<relationship name="effects">
 			<destination>{8b3cd09c-c236-4648-b65d-2ff093beada7}</destination>
-			<destination>{20da64ea-3d76-4e14-93e8-a9e9831bc7c8}</destination>
 			<destination>{0152cee6-5ccb-4a4f-bc74-fada86829042}</destination>
+			<destination>{d80261f7-1da0-4a4c-8062-6530adc19762}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{28128ea9-27d6-4dda-bcbe-32ea97f40df7}" />
 	<object class="MixerBusFader" id="{8b3cd09c-c236-4648-b65d-2ff093beada7}" />
-	<object class="Sidechain" id="{20da64ea-3d76-4e14-93e8-a9e9831bc7c8}" />
 	<object class="GainEffect" id="{0152cee6-5ccb-4a4f-bc74-fada86829042}">
 		<property name="gain">
 			<value>3</value>
 		</property>
+	</object>
+	<object class="CompressorEffect" id="{d80261f7-1da0-4a4c-8062-6530adc19762}">
+		<property name="threshold">
+			<value>-35.5</value>
+		</property>
+		<property name="ratio">
+			<value>11.5</value>
+		</property>
+		<property name="releaseTime">
+			<value>500</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{c050c327-7982-4b73-9a8a-0cc9a0014b57}</destination>
+		</relationship>
 	</object>
 </objects>

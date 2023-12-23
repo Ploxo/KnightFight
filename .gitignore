@@ -61,8 +61,6 @@ crashlytics-build.properties
 # FMOD Ignore
 Assets/Plugins/FMOD/Resources/FMODStudioCache.asset
 Assets/Plugins/FMOD/Resources/FMODStudioCache.asset.meta
-Assets/StreamingAssets//*.bank
-Assets/StreamingAssets//*.bank.meta
 Assets/StreamingAssets//.bank
 Assets/StreamingAssets//.bank.meta
 fmod_editor.log

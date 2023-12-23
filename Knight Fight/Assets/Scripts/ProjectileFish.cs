@@ -1,26 +1,27 @@
-﻿using System.Collections;
+﻿using FMODUnity;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ProjectileFish : ProjectileBase
 {
-    GameObject playerPos;
+    private float internalDespawnTimer = 0f;
+    private float despawnTimer = 0f;
     // Start is called before the first frame update
     private void Awake()
     {
         flyingState = new ProjectileFlyingState(this);
         groundedState = new ProjectileGroundedState(this);
         rb = GetComponent<Rigidbody>();
-        //parentObject = transform.parent.gameObject;
-        //Player = parentObject.GetComponent<WeaponThrowFishPattern>().parentPlayer.GetComponent<PlayerStatePattern>().rightHandGameobject;
-        //playerPos = parentObject.GetComponent<WeaponThrowFishPattern>().parentPlayer;
-        projectileTransform = gameObject.transform;  
+        despawnTimer = Random.Range(despawnTimerMin, despawnTimerMax);
+        audioPlayer = GetComponent<AudioProjectile>();
+
+
     }
 
     private void Start()
     {
         currentState = flyingState;
-        //Physics.IgnoreLayerCollision(Player.layer, gameObject.layer,true);
         LaunchPos(Player);
     }
 
@@ -28,21 +29,38 @@ public class ProjectileFish : ProjectileBase
     void Update()
     {
         currentState.UpdateState();
+        if(internalDespawnTimer >= despawnTimer)
+        {
+            Destroy(this.gameObject);
+        }
+        internalDespawnTimer += Time.deltaTime;
     }
 
     public override void LaunchPos(GameObject parent)
     {
-        //sätter projektilen på spelarens hand Kommer hit efter initsieringen av projektilen 
-        //GameObject SpawnPos = playerPos.transform.Find("ProjectileSpawnPoint").gameObject;
-        //projectileTransform.position = SpawnPos.transform.position;
-        //projectileTransform.rotation = playerPos.transform.rotation;
+        
         StateChanger(flyingState);
-        //LaunchFish();
+        
     }
 
     public override void StateChanger(ProjectileIState newState)
     {
         currentState = newState;
         currentState.OnStateEnter();
+    }
+
+    public override void OnCollisionStay(Collision collision)
+    {
+        currentState.CollisionStay(collision);
+    }
+
+    public override void OnCollisionEnter(Collision collision)
+    {
+        currentState.CollisionEnter(collision);
+
+        if (collision.gameObject.tag == playerTag)
+        {
+            //audioPlayer.Play();
+        }
     }
 }

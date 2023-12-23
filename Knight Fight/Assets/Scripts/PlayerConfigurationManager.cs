@@ -58,7 +58,7 @@ public class PlayerConfigurationManager : MonoBehaviour
 
     public void HandlePlayerJoin(PlayerInput pi)
     {
-        Debug.Log("Player Joine" + pi.playerIndex);
+        Debug.Log("Player Joined " + pi.playerIndex);
         if(!playerConfigs.Any(p => p.PlayerIndex == pi.playerIndex))    //Checks the player index to make sure if we haven't already added this player.
         {
             pi.transform.SetParent(transform);  //Set the player inputs transform to our transform so it'll become a child of "Player Configuration Manager" object. 

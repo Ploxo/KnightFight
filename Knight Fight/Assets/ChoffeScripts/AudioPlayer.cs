@@ -27,6 +27,10 @@ public class AudioPlayer : MonoBehaviour
     public string playerThrow;
     public FMOD.Studio.EventInstance playerThrowing;
 
+    [EventRef]
+    public string playerPunch;
+    public FMOD.Studio.EventInstance playerPunching;
+
 
 
     public void PlayerThrowing()
@@ -37,6 +41,11 @@ public class AudioPlayer : MonoBehaviour
     public void PlayerDashing()
     {
         RuntimeManager.PlayOneShot(playerDash, transform.position);
+    }
+
+    public void PlayerPunching()
+    {
+        RuntimeManager.PlayOneShot(playerPunch, transform.position);
     }
 
     public void PlayerHurting()

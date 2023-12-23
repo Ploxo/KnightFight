@@ -10,6 +10,8 @@ public class PlayerInputHandler : MonoBehaviour
     private PlayerInput playerInput;
     private PlayerStatePattern playerStatePattern;
 
+    [HideInInspector] public CommentatorStatePattern commentatorScript;
+
 
     private void Awake()
     {
@@ -18,6 +20,8 @@ public class PlayerInputHandler : MonoBehaviour
        
         var index = playerInput.playerIndex;
         playerStatePattern = playerStatePatterns.FirstOrDefault(m => m.GetPlayerIndex() == index);
+
+        commentatorScript = GetComponent <CommentatorStatePattern>();
     }
     public void OnMove(CallbackContext context)
     {

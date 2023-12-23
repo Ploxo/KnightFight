@@ -13,7 +13,23 @@ public class GameMenuState : GameIState
 
     public void OnStateEnter()
     {
+        foreach (GameObject player in manager.readyPlayers)
+        {
+            player.GetComponent<PlayerScoreTracker>().ClearScore();
+        }
+        manager.projectileDespawner.DestroyObjectsWithTag(manager.groundedProjectileTag);
+        manager.projectileDespawner.DestroyObjectsWithTag(manager.projectileTag);
+        manager.projectileDespawner.DestroyObjectsWithTag(manager.inputHandlerTag);
+
+        manager.inputManagerScript.RemoveDevices();
+
+        manager.winbanner.SetActive(false);
+        manager.DisablePlayers();
+        manager.crowdMoodSetter.SetMood(0);
+        manager.weaponSpawnManager.DestroyWeapons();
         manager.audioManager.StartMenuMusic();
+        manager.commentatorImage.SetActive(false);
+      
         manager.cameraScript.ChangeState(manager.cameraScript.arenaViewState);
         manager.menuCanvas.gameObject.SetActive(true);
 
@@ -30,11 +46,12 @@ public class GameMenuState : GameIState
         manager.inputManagerScript.trigger = false;
         manager.inputManagerScript.triggered = false;
         manager.RemovePlayersForCamera();
-        manager.weaponSpawnManager.DestroyWeapons();
+
     }
 
     public void UpdateState()
     {
-        //gör inget för tillfället
+        manager.SetRoundsText();
+        //manager.UpdateInputDevices();
     }
 }

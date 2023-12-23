@@ -30,11 +30,17 @@ public class WeaponEquippedState : WeaponIState
         weapon.rb.useGravity = false;
     }
 
-    public void HandleCollision(Collision col)
+    public void CollisionEnter(Collision col)
     {
-        if(col.gameObject.tag == weapon.playerTag)
+        if (col.gameObject.tag == weapon.playerTag)
         {
             weapon.audioPlayer.AttackHittingPlayer();
         }
     }
+
+    public void CollisionStay(Collision col)
+    {
+        
+    }
+
 }

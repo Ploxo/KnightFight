@@ -3,7 +3,14 @@ guid: 9e5549f0a6573434aa58d281d5cb8b54
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - spawnEffect: {instanceID: 0}
+  - parentObject: {instanceID: 0}
+  - player: {instanceID: 0}
+  - spellBook: {instanceID: 0}
+  - Player: {instanceID: 0}
+  - projectileTransform: {instanceID: 0}
+  - rb: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

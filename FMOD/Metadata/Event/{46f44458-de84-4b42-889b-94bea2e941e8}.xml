@@ -53,7 +53,7 @@
 			<destination>{0274a1b2-d750-4272-8338-55d8cc5be2be}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{4778e8ea-745c-4994-8b8a-4a0182cd9786}</destination>
+			<destination>{8026de32-5995-4125-af03-984e244fb927}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{1c7da807-9a8e-467d-b3ac-1882b29d44ae}">
@@ -106,6 +106,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{6533bb07-495f-42de-862d-df0cf84de21f}">
+		<property name="volume">
+			<value>5</value>
+		</property>
 		<property name="name">
 			<value>mumble</value>
 		</property>

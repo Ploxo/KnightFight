@@ -8,5 +8,8 @@ public interface ProjectileIState
     //void ChangePhysics();
     void UpdateState();
     void ChangeState(ProjectileIState newState);
-    //void HandleCollision(Collision col);
+    void CollisionStay(Collision col);
+
+    void CollisionEnter(Collision col);
+
 }

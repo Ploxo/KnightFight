@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EventFolder" id="{1ea777ad-6aa8-486c-9341-69f59eb912fc}">
+		<property name="name">
+			<value>OnInactivity</value>
+		</property>
+		<relationship name="folder">
+			<destination>{768fae8b-b48a-48fd-99e5-1a4f5e503d93}</destination>
+		</relationship>
+	</object>
+</objects>

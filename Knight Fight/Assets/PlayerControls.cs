@@ -20,9 +20,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
             ""actions"": [
                 {
                     ""name"": ""Move"",
-                    ""type"": ""Button"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""0f16c0ee-573c-4e97-af4f-adf35d02cf15"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
@@ -64,9 +64,75 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
+                    ""name"": ""ArrowKeys"",
+                    ""id"": ""777743a2-34b5-4e46-8f93-0f8a89054c51"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""a4cd1104-312b-40b5-a610-76467c50299d"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""2d9cfba9-1079-4437-9ecc-50f194e24c5b"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""d27244b8-e5f4-4751-944d-0fe193a1a860"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""a9a0da32-e667-407a-84cc-9486daff0e67"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
                     ""name"": """",
                     ""id"": ""df5c4572-57d1-4e44-9a89-ef698c4935a5"",
                     ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a057967e-0879-41d9-a157-38541d40a1ba"",
+                    ""path"": ""<Keyboard>/z"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -87,8 +153,30 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""7ae3dd5a-60fb-4739-a929-61d847050030"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ThrowWep"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""f6f9825a-b45e-400d-8e80-982354b548c9"",
                     ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""83372dd2-5741-4e23-94a5-5ead205fc163"",
+                    ""path"": ""<Keyboard>/c"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -106,14 +194,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""name"": ""Join"",
                     ""type"": ""Button"",
                     ""id"": ""27949091-c09b-4a61-ad7e-1cdc3cbe9d7d"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""Leave"",
-                    ""type"": ""Button"",
-                    ""id"": ""2d07fe4d-0c9f-4155-a989-05aef151110d"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
@@ -141,12 +221,12 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""9f6c6e9a-ed26-4113-ae87-9c46054769f0"",
-                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""id"": ""81b0bc34-8d3e-442c-9cde-fa4028b9b8e8"",
+                    ""path"": ""<Keyboard>/x"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Leave"",
+                    ""action"": ""Join"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -154,6 +234,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""576f4b50-ec12-44b4-9793-40706481ca45"",
                     ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ToMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""39139eca-3e8f-4ab6-993b-43d703812217"",
+                    ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -175,7 +266,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         // MenuInput
         m_MenuInput = asset.FindActionMap("MenuInput", throwIfNotFound: true);
         m_MenuInput_Join = m_MenuInput.FindAction("Join", throwIfNotFound: true);
-        m_MenuInput_Leave = m_MenuInput.FindAction("Leave", throwIfNotFound: true);
         m_MenuInput_ToMenu = m_MenuInput.FindAction("ToMenu", throwIfNotFound: true);
     }
 
@@ -284,14 +374,12 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputActionMap m_MenuInput;
     private IMenuInputActions m_MenuInputActionsCallbackInterface;
     private readonly InputAction m_MenuInput_Join;
-    private readonly InputAction m_MenuInput_Leave;
     private readonly InputAction m_MenuInput_ToMenu;
     public struct MenuInputActions
     {
         private @PlayerControls m_Wrapper;
         public MenuInputActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Join => m_Wrapper.m_MenuInput_Join;
-        public InputAction @Leave => m_Wrapper.m_MenuInput_Leave;
         public InputAction @ToMenu => m_Wrapper.m_MenuInput_ToMenu;
         public InputActionMap Get() { return m_Wrapper.m_MenuInput; }
         public void Enable() { Get().Enable(); }
@@ -305,9 +393,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Join.started -= m_Wrapper.m_MenuInputActionsCallbackInterface.OnJoin;
                 @Join.performed -= m_Wrapper.m_MenuInputActionsCallbackInterface.OnJoin;
                 @Join.canceled -= m_Wrapper.m_MenuInputActionsCallbackInterface.OnJoin;
-                @Leave.started -= m_Wrapper.m_MenuInputActionsCallbackInterface.OnLeave;
-                @Leave.performed -= m_Wrapper.m_MenuInputActionsCallbackInterface.OnLeave;
-                @Leave.canceled -= m_Wrapper.m_MenuInputActionsCallbackInterface.OnLeave;
                 @ToMenu.started -= m_Wrapper.m_MenuInputActionsCallbackInterface.OnToMenu;
                 @ToMenu.performed -= m_Wrapper.m_MenuInputActionsCallbackInterface.OnToMenu;
                 @ToMenu.canceled -= m_Wrapper.m_MenuInputActionsCallbackInterface.OnToMenu;
@@ -318,9 +403,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Join.started += instance.OnJoin;
                 @Join.performed += instance.OnJoin;
                 @Join.canceled += instance.OnJoin;
-                @Leave.started += instance.OnLeave;
-                @Leave.performed += instance.OnLeave;
-                @Leave.canceled += instance.OnLeave;
                 @ToMenu.started += instance.OnToMenu;
                 @ToMenu.performed += instance.OnToMenu;
                 @ToMenu.canceled += instance.OnToMenu;
@@ -338,7 +420,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     public interface IMenuInputActions
     {
         void OnJoin(InputAction.CallbackContext context);
-        void OnLeave(InputAction.CallbackContext context);
         void OnToMenu(InputAction.CallbackContext context);
     }
 }

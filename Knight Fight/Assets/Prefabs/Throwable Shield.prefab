@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1151154424721076325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3112548189764595362}
+  - component: {fileID: 416788526092797045}
+  - component: {fileID: 6249397580798955370}
+  - component: {fileID: 5958757563900278472}
+  - component: {fileID: 3681020773798993435}
+  - component: {fileID: 5909608343243788674}
+  - component: {fileID: 8502566969138783400}
+  m_Layer: 12
+  m_Name: Throwable Shield
+  m_TagString: Weapon
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3112548189764595362
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151154424721076325}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+  m_LocalScale: {x: 5, y: 5, z: 5}
+=======
+  m_LocalScale: {x: 20, y: 20, z: 20}
+>>>>>>> Ljud-Erik
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &416788526092797045
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151154424721076325}
+  m_Mesh: {fileID: -3680046783922667223, guid: a9b35fc0d99a26b428239d2e307faa50, type: 3}
+--- !u!23 &6249397580798955370
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151154424721076325}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e5b14f462744e2349bf5f46e763a2874, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &5958757563900278472
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151154424721076325}
+<<<<<<< HEAD
+  m_Material: {fileID: 13400000, guid: 877065054d55021469a18b7ff759dad7, type: 2}
+=======
+  m_Material: {fileID: 0}
+>>>>>>> Ljud-Erik
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -3680046783922667223, guid: a9b35fc0d99a26b428239d2e307faa50, type: 3}
+--- !u!114 &3681020773798993435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151154424721076325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe581805340b1b748bf26fe93744212b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentPlayer: {fileID: 0}
+  audioPlayer: {fileID: 8502566969138783400}
+  thisWepType: 3
+<<<<<<< HEAD
+  launchDir: 0
+  animationDuration: 1
+=======
+  animationDuration: 1
+  internalAttackTimer: 0
+  attackActive: 0
+>>>>>>> Ljud-Erik
+  durability: 100
+  damage: 25
+  thrownDamage: 13
+  thrownForce: 25
+  throwAngle: 0.25
+<<<<<<< HEAD
+  attackActive: 0
+=======
+>>>>>>> Ljud-Erik
+  environmentTag: Environment
+  playerTag: Player
+  projectileTag: WeaponProjectile
+  weaponTag: Weapon
+<<<<<<< HEAD
+  UnequippedLayer: 13
+  EquippedLayer: 14
+  heldPosition: {x: -0.681, y: 0.1, z: 0.433}
+=======
+  UnequippedLayer: 12
+  EquippedLayer: 13
+  heldPosition: {x: 0.107, y: 0.052, z: -0.443}
+>>>>>>> Ljud-Erik
+  heldRotation: {x: -89.14301, y: 0.002, z: -9.665001}
+  rb: {fileID: 5909608343243788674}
+  col: {fileID: 5958757563900278472}
+  anim: {fileID: 0}
+<<<<<<< HEAD
+  attackThrowForce: 30
+=======
+  attackThrowForce: 0
+>>>>>>> Ljud-Erik
+  durabilityDecrement: 0
+--- !u!54 &5909608343243788674
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151154424721076325}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+<<<<<<< HEAD
+  m_CollisionDetection: 0
+=======
+  m_CollisionDetection: 1
+>>>>>>> Ljud-Erik
+--- !u!114 &8502566969138783400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151154424721076325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e5723d5b350ca443acdd43dbd0fcfbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack: 
+  attackHitPlayer: 
+  throwWep: 
+  ThrownWepHitEnvironment: 
+  weaponPickup: 
+  weaponBreak: 

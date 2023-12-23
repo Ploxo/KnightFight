@@ -7,6 +7,9 @@
 		<property name="name">
 			<value>BGM</value>
 		</property>
+		<relationship name="masters">
+			<destination>{d270477f-cac6-4577-a10c-902ebe99035d}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{84a6d76b-e177-49aa-8980-260a1075005f}</destination>
 		</relationship>
@@ -20,12 +23,12 @@
 	<object class="MixerBusEffectChain" id="{84a6d76b-e177-49aa-8980-260a1075005f}">
 		<relationship name="effects">
 			<destination>{49cc17e0-3040-4306-b6a5-ce639a4a6d83}</destination>
-			<destination>{a36d1b89-eae4-42f5-bec0-2db836df40d2}</destination>
+			<destination>{4b11d6a7-b683-402f-a1bc-0093e412b227}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{baf361f5-0601-4e6c-ba18-7d2f5b5c70ac}" />
 	<object class="MixerBusFader" id="{49cc17e0-3040-4306-b6a5-ce639a4a6d83}" />
-	<object class="CompressorEffect" id="{a36d1b89-eae4-42f5-bec0-2db836df40d2}">
+	<object class="CompressorEffect" id="{4b11d6a7-b683-402f-a1bc-0093e412b227}">
 		<property name="threshold">
 			<value>-23</value>
 		</property>
@@ -36,7 +39,7 @@
 			<value>180</value>
 		</property>
 		<relationship name="sidechains">
-			<destination>{20da64ea-3d76-4e14-93e8-a9e9831bc7c8}</destination>
+			<destination>{c050c327-7982-4b73-9a8a-0cc9a0014b57}</destination>
 		</relationship>
 	</object>
 </objects>

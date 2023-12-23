@@ -21,21 +21,21 @@ public class PlayerThrowState : PlayerIState
     public void UpdateState()
     {
         player.ChangeDirection();
-        if (internalStateTimer >= player.throwAnimDuration)
+        if(internalStateTimer >= player.throwAnimDuration)
         {
             player.ThrowItem();
             player.RunOrIdleDecider();
-
         }
         else
+        {
             internalStateTimer += Time.deltaTime;
+        }
     }
-    public void ChangeState(PlayerIState newState)
+    public void ExitState()
     {
         player.animator.SetBool("Throw", false);
         internalStateTimer = 0f;
         player.internalGCDTimer = 0f;
-        player.StateChanger(newState);
     }
     public void TakeDamage(float damage)
     {

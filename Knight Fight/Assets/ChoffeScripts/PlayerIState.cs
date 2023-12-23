@@ -6,6 +6,6 @@ public interface PlayerIState
 {
     void OnStateEnter();
     void UpdateState();
-    void ChangeState(PlayerIState newState);
+    void ExitState();
     void TakeDamage(float damage);
 }
