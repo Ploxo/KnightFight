@@ -5,9 +5,9 @@ An arena brawler game that can be played with up to 4 players.
 
 ## About
 
-This arena brawler game is intended to be played with up to 4 players on the couch in front of a TV, it's played using a console controller. Players pick up various weapons and try to knock out their opponents, it's a fast-paced action game where the last man standing is the winner.
-
 This game was developed as part of a course during my bachelor's (the course was called 'Game Development 2').
+
+This arena brawler game is intended to be played with up to 4 players on the couch in front of a TV, it's played using a console controller. Players pick up various weapons and try to knock out their opponents, it's a fast-paced action game where the last man standing is the winner.
 
 ![Knight Fight screenshot 1](https://github.com/Ploxo/KnightFight/assets/47030482/ab53d303-a50b-40a5-b5ce-159ae094d7dd)
 ![Knight Fight screenshot 2](https://github.com/Ploxo/KnightFight/assets/47030482/9ea48c0d-5397-4c0b-a403-445c5271ed20)
